@@ -1,8 +1,14 @@
+import { ThemeProvider } from '@mui/material/styles';
+import theme from './theme';
+import Home from './pages/Home/Home';
+
 function App() {
   return (
-    <div className="App">
-      Hello, World!
-    </div>
+    <ThemeProvider theme={theme}>
+      <div className="App">
+        <Home />
+      </div>
+    </ThemeProvider>
   );
 }
 
